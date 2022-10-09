@@ -10,7 +10,7 @@ import Client from '../../models/client.model';
 })
 export class ClientListComponent implements OnInit {
     
-    @Input() listOfData: Client[]=[];
+    listOfData: Client[]=[];
     @Output() clientEdit = new EventEmitter<Client>();
 
 
