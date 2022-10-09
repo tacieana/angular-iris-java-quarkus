@@ -19,7 +19,7 @@ import org.eclipse.microprofile.openapi.annotations.parameters.RequestBody;
 import shift.hackathon.demo.entity.Client;
 import shift.hackathon.demo.service.ClientService;
 
-@Path("/api/guest")
+@Path("/api/client")
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
 public class ClientController {
