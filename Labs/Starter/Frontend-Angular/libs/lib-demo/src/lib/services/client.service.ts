@@ -16,4 +16,8 @@ export class ClientService {
         return this.resource.listAll();
     }
 
+    delete(id:number){
+        return this.resource.delete(id);
+    }
+
 }

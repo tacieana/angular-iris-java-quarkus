@@ -21,4 +21,8 @@ export class ClientResource {
         return this.http.get<Client[]>(`${this.baseUrlAPI}/api/client`);
     }
 
+    delete(id:number){
+        return this.http.delete<Client[]>(`${this.baseUrlAPI}/api/client/${id}`);
+    }
+
 }

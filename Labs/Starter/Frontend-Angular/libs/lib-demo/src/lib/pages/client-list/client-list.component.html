@@ -15,9 +15,9 @@
         <td>{{ data.lastName }}</td>
         <td>{{ data.cpf }}</td>
         <td>
-          <a>Edit</a>
+          <a (click)="edit(data)">Edit</a>
           <nz-divider nzType="vertical"></nz-divider>
-          <a>Delete</a>
+          <a (click)="delete(data.id)">Delete</a>
         </td>
       </tr>
     </tbody>
