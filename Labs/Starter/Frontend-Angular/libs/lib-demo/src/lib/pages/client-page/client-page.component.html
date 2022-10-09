@@ -1,0 +1,22 @@
+<frontend-angular-client-list
+    [header]="header"
+    (clientEdit)="edit($event)"
+    [refreshList]="refreshList"
+></frontend-angular-client-list>
+<ng-template #header>
+    <button (click)="new()" nz-button [nzType]="'primary'">New</button>
+</ng-template>
+<nz-modal
+    [nzVisible]="visibleModalForm()"
+    [nzTitle]="getTitleForm()"
+    (nzOnCancel)="cancelForm()"
+    [nzFooter]="null"
+>
+    <ng-container *nzModalContent>
+        <frontend-angular-client-form
+            *ngIf="client"
+            [client]="client"
+            (saveEvent)="saveEvent($event)"
+        ></frontend-angular-client-form>
+    </ng-container>
+</nz-modal>

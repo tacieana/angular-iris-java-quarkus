@@ -25,4 +25,12 @@ export class ClientResource {
         return this.http.delete<Client[]>(`${this.baseUrlAPI}/api/client/${id}`);
     }
 
+    save(client:Client){
+        return this.http.post(`${this.baseUrlAPI}/api/client`, client);
+    }
+
+    update(id:number, client:Client){
+        return this.http.put(`${this.baseUrlAPI}/api/client/${id}`, client);
+    }
+
 }

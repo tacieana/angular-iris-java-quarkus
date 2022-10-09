@@ -20,4 +20,12 @@ export class ClientService {
         return this.resource.delete(id);
     }
 
+    save(client:Client){
+        return this.resource.save(client);
+    }
+
+    update(id:number, client:Client){
+        return this.resource.update(id, client);
+    }
+
 }

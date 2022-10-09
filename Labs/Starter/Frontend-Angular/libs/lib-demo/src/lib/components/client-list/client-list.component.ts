@@ -1,5 +1,6 @@
-import { ClientService } from './../../services/client.service';
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Subject } from 'rxjs';
+import { ClientService } from '../../services/client.service';
+import { Component, EventEmitter, Input, OnInit, Output, TemplateRef } from '@angular/core';
 import Client from '../../models/client.model';
 
 
@@ -10,16 +11,22 @@ import Client from '../../models/client.model';
 })
 export class ClientListComponent implements OnInit {
     
+    @Input() header!: TemplateRef<void>;
+    @Input() refreshList: Subject<boolean> = new Subject<boolean>();
     listOfData: Client[]=[];
-    @Output() clientEdit = new EventEmitter<Client>();
-
+    @Output() clientEdit = new EventEmitter<Client>();    
 
     constructor(private service: ClientService) {}
 
     ngOnInit(): void {
-        this.service.listAll().subscribe(result=>{
-            this.listOfData = result;
+        this.refreshList.subscribe(response => {
+            if(response){
+                this.service.listAll().subscribe(result=>{
+                    this.listOfData = result;
+                });
+            }
         });
+        this.refreshList.next(true);
     }
 
     edit(client:Client){

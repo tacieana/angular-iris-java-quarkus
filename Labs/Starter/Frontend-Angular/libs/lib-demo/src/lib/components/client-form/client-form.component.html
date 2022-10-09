@@ -1,0 +1,24 @@
+<form nz-form [formGroup]="validateForm" (ngSubmit)="submitForm()">
+    <nz-form-item>
+      <nz-form-control nzErrorTip="Please input your firstName!">
+        <nz-input-group>
+          <input type="text" nz-input formControlName="firstName" placeholder="FirstName" />
+        </nz-input-group>
+      </nz-form-control>
+    </nz-form-item>
+    <nz-form-item>
+      <nz-form-control nzErrorTip="Please input your lastName!">
+        <nz-input-group>
+          <input type="text" nz-input formControlName="lastName" placeholder="LastName" />
+        </nz-input-group>
+      </nz-form-control>
+    </nz-form-item>
+    <nz-form-item>
+        <nz-form-control nzErrorTip="Please input your cpf!">
+          <nz-input-group>
+            <input type="number" nz-input formControlName="cpf" placeholder="CPF" />
+          </nz-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    <button nz-button class="client-form-button client-form-margin" [nzType]="'primary'">Save</button>
+</form>
