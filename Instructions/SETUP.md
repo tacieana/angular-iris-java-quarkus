@@ -1,8 +1,9 @@
 # Setup ambiente de desenvolvimento
-TODO: Documentar setup de ambiente de desenvolvimento
-
-Pré-requisitos:
+## Pré-requisitos:
+Realize o download e instação das ferramentas:
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 - [node v16.17.1](https://nodejs.org/en/)
 - [JDK v11](https://adoptopenjdk.net/?variant=openjdk11&jvmVariant=openj9)
 - [VsCode](https://code.visualstudio.com/)
+
+TODO: Documentar setup de ambiente de desenvolvimento
