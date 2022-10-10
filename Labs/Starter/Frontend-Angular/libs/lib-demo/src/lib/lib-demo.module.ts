@@ -11,6 +11,7 @@ import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzModalModule } from 'ng-zorro-antd/modal';
 import { ClientPageComponent } from './pages/client-page/client-page.component';
 import { NzMessageModule } from 'ng-zorro-antd/message';
+import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
     imports: [
@@ -23,6 +24,7 @@ import { NzMessageModule } from 'ng-zorro-antd/message';
         NzButtonModule,
         NzModalModule,
         NzMessageModule,
+        TranslateModule
     ],
     declarations: [
         ClientListComponent,

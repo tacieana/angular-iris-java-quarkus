@@ -1,11 +1,11 @@
 <nz-table #basicTable [nzData]="listOfData" [nzTitle]="header">
     <thead>
       <tr>
-        <th>Id</th>
-        <th>firstName</th>
-        <th>lastName</th>
-        <th>cpf</th>
-        <th>Action</th>
+        <th>{{'common.id' | translate}}</th>
+        <th>{{'client.firstName' | translate}}</th>
+        <th>{{'client.lastName' | translate}}</th>
+        <th>{{'client.cpf' | translate}}</th>
+        <th>{{'common.action' | translate}}</th>
       </tr>
     </thead>
     <tbody>
@@ -15,9 +15,9 @@
         <td>{{ data.lastName }}</td>
         <td>{{ data.cpf }}</td>
         <td>
-          <a (click)="edit(data)">Edit</a>
+          <a (click)="edit(data)">{{'common.edit' | translate}}</a>
           <nz-divider nzType="vertical"></nz-divider>
-          <a (click)="delete(data.id)">Delete</a>
+          <a (click)="delete(data.id)">{{'common.delete' | translate}}</a>
         </td>
       </tr>
     </tbody>

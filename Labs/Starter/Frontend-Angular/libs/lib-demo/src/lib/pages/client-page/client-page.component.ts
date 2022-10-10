@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 import { NzMessageService } from 'ng-zorro-antd/message';
 import { Subject } from 'rxjs';
 import Client from '../../models/client.model';
@@ -12,7 +13,7 @@ export class ClientPageComponent {
     public client: Client | undefined;
     public refreshList: Subject<boolean> = new Subject<boolean>();
 
-    constructor(private message: NzMessageService) {}
+    constructor(private message: NzMessageService, private translate: TranslateService) {}
 
     new() {
         this.client = { id: 0, firstName: '', lastName: '', cpf: '' };
@@ -28,8 +29,12 @@ export class ClientPageComponent {
 
     getTitleForm() {
         return this.client?.id
-            ? `Edit Client #${this.client.id}`
-            : 'New Client';
+            ? this.translate.instant('client.updateClient', {
+                id: this.client?.id,
+            })
+            : this.translate.instant('client.newClient', {
+                id: this.client?.id,
+            });
     }
 
     visibleModalForm() {

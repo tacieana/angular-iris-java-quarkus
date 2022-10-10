@@ -1,24 +1,24 @@
 <form nz-form [formGroup]="validateForm" (ngSubmit)="submitForm()">
     <nz-form-item>
-      <nz-form-control nzErrorTip="Please input your firstName!">
+      <nz-form-control nzErrorTip="{{'client.firstNameRequired' | translate}}">
         <nz-input-group>
-          <input type="text" nz-input formControlName="firstName" placeholder="FirstName" />
+          <input type="text" nz-input formControlName="firstName" placeholder="{{'client.firstName' | translate}}" />
         </nz-input-group>
       </nz-form-control>
     </nz-form-item>
     <nz-form-item>
-      <nz-form-control nzErrorTip="Please input your lastName!">
+      <nz-form-control nzErrorTip="{{'client.lastNameRequired' | translate}}">
         <nz-input-group>
-          <input type="text" nz-input formControlName="lastName" placeholder="LastName" />
+          <input type="text" nz-input formControlName="lastName" placeholder="{{'client.lastName' | translate}}" />
         </nz-input-group>
       </nz-form-control>
     </nz-form-item>
     <nz-form-item>
-        <nz-form-control nzErrorTip="Please input your cpf!">
+        <nz-form-control nzErrorTip="{{'client.cpfRequired' | translate}}">
           <nz-input-group>
-            <input type="number" nz-input formControlName="cpf" placeholder="CPF" />
+            <input type="number" nz-input formControlName="cpf" placeholder="{{'client.cpf' | translate}}" />
           </nz-input-group>
         </nz-form-control>
       </nz-form-item>
-    <button nz-button class="client-form-button client-form-margin" [nzType]="'primary'">Save</button>
+    <button nz-button class="client-form-button client-form-margin" [nzType]="'primary'">{{'common.save' | translate}}</button>
 </form>

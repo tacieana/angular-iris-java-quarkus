@@ -4,7 +4,7 @@
     [refreshList]="refreshList"
 ></frontend-angular-client-list>
 <ng-template #header>
-    <button (click)="new()" nz-button [nzType]="'primary'">New</button>
+    <button (click)="new()" nz-button [nzType]="'primary'">{{'common.new' | translate}}</button>
 </ng-template>
 <nz-modal
     [nzVisible]="visibleModalForm()"

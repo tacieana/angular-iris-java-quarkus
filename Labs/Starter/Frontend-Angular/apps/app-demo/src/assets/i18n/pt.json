@@ -1,0 +1,22 @@
+{
+  "common": {
+    "new": "Novo",
+    "save": "Salvar",
+    "id": "ID",
+    "edit": "Editar",
+    "delete": "Excluir",
+    "action": "Ação"
+  },
+  "client": {
+    "firstName": "Nome",
+    "lastName": "Sobrenome",
+    "cpf": "CPF",
+    "newClient": "Novo Cliente",
+    "updateClient": "Editando Cliente #{{ id }}",
+    "firstNameRequired": "Informe seu nome",
+    "lastNameRequired": "Informe seu sobrenome",
+    "cpfRequired": "Informe seu CPF",
+    "saveClientSuccess": "Novo cliente armazenado com sucesso",
+    "updateClientSuccess": "cliente #{{ id }} atualizado com sucesso"
+  }
+}
