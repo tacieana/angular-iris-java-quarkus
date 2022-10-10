@@ -1,2 +1,2 @@
 # Setup ambiente de desenvolvimento
-TODO: Documentar setup de ambiente
+TODO: Documentar setup de ambiente de desenvolvimento
