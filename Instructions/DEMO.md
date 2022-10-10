@@ -10,6 +10,6 @@ sequenceDiagram
     participant Backend_Java
     Frontend_Angular->>Backend_Java: Rest Request
     Backend_Java->>IRIS_Docker: JDBC Query
-    IRIS_Docker-->>Backend_Java: RESULT
+    IRIS_Docker-->>Backend_Java: Result
     Backend_Java-->>Frontend_Angular: JSON Response
 ```
