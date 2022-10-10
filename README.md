@@ -1,3 +1,7 @@
 # angular-iris-java-quarkus
 
-TODO: Documentação com a visão geral
+TODO: Introdução e Visão geral
+
+## Instruções
+- [Setup ambiente de desenvolvimento](Instructions/SETUP.md)
+- [Projeto Demonstração](Instructions/DEMO.md)
