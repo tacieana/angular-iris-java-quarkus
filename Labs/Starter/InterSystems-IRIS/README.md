@@ -10,13 +10,19 @@ Make sure you have [git](https://git-scm.com/book/en/v2/Getting-Started-Installi
 Open the terminal in this directory and run:
 
 ```
-$ DOCKER_BUILDKIT=1 docker-compose build
+ docker-compose build
+```
+
+If a BUILDK error occurs, run the command:
+ 
+```
+ DOCKER_BUILDKIT=1 docker-compose build
 ```
 
 3. Run the IRIS container with your project:
 
 ```
-$ docker-compose up -d
+ docker-compose up -d
 ```
 
 ## How to Test it
