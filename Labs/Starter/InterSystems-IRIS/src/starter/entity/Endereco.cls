@@ -13,9 +13,11 @@ Property Bairro As %VarString [ Required ];
 
 Property Cep As %VarString [ Required ];
 
-Property UF As %VarString [ Required ];
+Property SiglaUF As starter.entity.Estado [ Required ];
 
 Index Id On Id [ PrimaryKey ];
+
+ForeignKey SiglaUFFK(SiglaUF) References starter.entity.Estado(IdxSigla);
 
 Storage Default
 {
@@ -39,7 +41,7 @@ Storage Default
 <Value>Cep</Value>
 </Value>
 <Value name="7">
-<Value>UF</Value>
+<Value>SiglaUF</Value>
 </Value>
 </Data>
 <DataLocation>^starter.entity.EnderecoD</DataLocation>
