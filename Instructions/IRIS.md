@@ -9,7 +9,7 @@
 - [Para acessar dados de tabelas relacionadas com menos comandos: Join implícito](https://docs.intersystems.com/irislatest/csp/docbook/DocBook.UI.Page.cls?KEY=RSQL_select#RSQL_select_item_arrow)
 
 
-## COS
+## Object Script
 
 - [Definição de classes](https://docs.intersystems.com/iris20221/csp/docbook/DocBook.UI.Page.cls?KEY=GOBJ_classes)
 - [Tipos de dados](https://docs.intersystems.com/irislatest/csp/docbook/DocBook.UI.Page.cls?KEY=GCOS_types)
