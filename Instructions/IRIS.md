@@ -1,15 +1,16 @@
-# Setup ambiente de desenvolvimento
-## Pré-requisitos:
-Realize o download e instalação das ferramentas:
-- [Git](https://git-scm.com/downloads)
-- [Docker Desktop](https://www.docker.com/products/docker-desktop/)
-- [node v16.17.1](https://nodejs.org/en/)
-- [JDK v11](https://adoptopenjdk.net/?variant=openjdk11&jvmVariant=openj9)
-- [VsCode](https://code.visualstudio.com/)
+# Links úteis
+
+## SQL
+
+- [Funções para manipulação de dados](https://docs.intersystems.com/irislatest/csp/docbook/DocBook.UI.Page.cls?KEY=RSQL_FUNCTIONS)
+- [Funções de agregação](https://docs.intersystems.com/irislatest/csp/docbook/DocBook.UI.Page.cls?KEY=RSQL_AGGREGATE_FUNCTIONS)
+- [Comando para retornar apenas a primeira linha do SELECT](https://docs.intersystems.com/irislatest/csp/docbook/DocBook.UI.Page.cls?KEY=RSQL_top)
+- [Símbolos e operadores](https://docs.intersystems.com/irislatest/csp/docbook/DocBook.UI.Page.cls?KEY=RSQL_symbols)
+- Para acessar dados de tabelas relacionadas com menos comandos: [Join implícito](https://docs.intersystems.com/irislatest/csp/docbook/DocBook.UI.Page.cls?KEY=RSQL_select#RSQL_select_item_arrow)
 
 
-Para acessar o servidor IRIS através do VsCode instale o plugin InterSystems ObjectScript Extension Pack
-- [ObjectScript Extension Pack](https://marketplace.visualstudio.com/items?itemName=daimor.vscode-objectscript)
-   ![vscodeintersystemextensionpack.png](images/vscodeintersystemextensionpack.png)
+## COS
 
-TODO: Documentar setup de ambiente de desenvolvimento
+- [Definição de classes](https://docs.intersystems.com/iris20221/csp/docbook/DocBook.UI.Page.cls?KEY=GOBJ_classes)
+- [Formatos de datas](https://docs.intersystems.com/iris20221/csp/docbook/DocBook.UI.Page.cls?KEY=GOBJ_datatypes#GOBJ_dt_fmtstrans)
+- [Classe %Persistent - propriedades e métodos](https://docs.intersystems.com/iris20221/csp/documatic/%25CSP.Documatic.cls?LIBRARY=%25SYS&CLASSNAME=%25Library.Persistent)
