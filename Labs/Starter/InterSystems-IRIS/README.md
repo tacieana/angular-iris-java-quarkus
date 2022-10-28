@@ -1,3 +1,5 @@
+# Acessando o servidor IRIS através do container docker
+
 ## Pre requisitos
 
 - [Setup ambiente de desenvolvimento](/Instructions/SETUP.md)
@@ -30,14 +32,15 @@ Executar container IRIS com o seu projeto:
 $ docker-compose exec iris iris session iris
 ```
 
-- Portal local
+- Portal de administração: Nesta ferramenta é possível realizar configurações do servidor, ambiente, acessar o banco de dados, realizar análises de performance, 
 ```
-	http://localhost:53773/csp/sys/%25CSP.Portal.Home.zen
+http://localhost:53773/csp/sys/%25CSP.Portal.Home.zen
     - usuario: _SYSTEM
     - senha: SYS
 ```
 
-## Criar uma nova namespace para o projeto
+## Manutenção do banco de dados
+### Criando uma namespace
 - Acesse o portal local:  http://localhost:53773/csp/sys/%25CSP.Portal.Home.zen
 - Acesse Sistema > Configuração > Namespaces > Criar novo namespace
 - Preencha os dados do namespace:
@@ -47,30 +50,37 @@ $ docker-compose exec iris iris session iris
 
 ## Manutenção de usuários
 
-- No portal de administração, acesse Sistema > Administração de Segurança > Usuários para visualizar os usuários existentes e seus direitos de acesso
+### No portal de administração, acesse Sistema > Administração de Segurança > Usuários para visualizar os usuários existentes e seus direitos de acesso
 
 ![irisusuarios.png](/Instructions/images/irisusuarios.png)
 
-- Ao criar um novo usuário, para facilitar copie os direitos de acesso de um usuário existente
+### Ao criar um novo usuário, para facilitar copie os direitos de acesso de um usuário existente
 
 ![irisnovousuario.png](/Instructions/images/irisnovousuario.png)
 
+### Na edição do usuário é possível definir os direitos de acesso, para adicionar uma nova função ao usuário selecione na lista, e clique no botão aplicar
+
+![irisuserroles.png](/Instructions/images/irisuserroles.png)
+
+Para mais detalhes [Documentação Intersystem contas de usuário] https://docs.intersystems.com/irislatest/csp/docbook/DocBook.UI.Page.cls?KEY=GAUTHZ_users
+
+
+## Log de erros
+Caso seja necessário analisar alguma instabilidade os logs de erros ficam disponíveis no portal de admnistração em:
+
+- Sistema  > Logs do Sistema  > Exibir Log de Erros de Aplicação
+- Sistema  > Servidores de Replicação (Shadow)  > Erros de Fonte de Dados
+
+
+## Executando comandos SQL
+- Pelo portal de admnistração é possível executar comandos SQL através do menu: Sistema > SQL
+- Selecione a namespace que deseja acessar
+
+![irissql.png](/Instructions/images/irissql.png)
 
 
 
-
-
-## How to start coding
-This repository is ready to code in VSCode with ObjectScript plugin.
-Install [VSCode](https://code.visualstudio.com/), [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker) and [ObjectScript](https://marketplace.visualstudio.com/items?itemName=daimor.vscode-objectscript) plugin and open the folder in VSCode.
-Open /src/dc/sample/ObjectScript.cls class and try to make changes - it will be compiled in running IRIS docker container.
-![docker_compose](https://user-images.githubusercontent.com/2781759/76656929-0f2e5700-6547-11ea-9cc9-486a5641c51d.gif)
-
-Feel free to delete PackageSample folder and place your ObjectScript classes in a form
-/src/Package/Classname.cls
-[Read more about folder setup for InterSystems ObjectScript](https://community.intersystems.com/post/simplified-objectscript-source-folder-structure-package-manager)
-
-The script in Installer.cls will import everything you place under /src into IRIS.
+##plugins
 
 
 ## What's inside the repository
