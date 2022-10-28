@@ -93,14 +93,10 @@ Para acessar o servidor IRIS através do VsCode instale o plugin InterSystems [O
 ![vscodeintersystemextensionpack.png](/Instructions/images/vscodeintersystemextensionpack.png)
 
 
-
-## What's inside the repository
-
 ### Dockerfile
 
 The simplest Dockerfile which starts IRIS and imports code from /src folder into it.
 Use the related docker-compose.yml to easily setup additional parametes like port number and where you map keys and host folders.
-
 
 ### .vscode/settings.json
 
@@ -109,7 +105,7 @@ Settings file to let you immediately code in VSCode with [VSCode ObjectScript pl
 ### .vscode/launch.json
 Config file if you want to debug with VSCode ObjectScript
 
-[Read about all the files in this article](https://community.intersystems.com/post/dockerfile-and-friends-or-how-run-and-collaborate-objectscript-projects-intersystems-iris)
+
 
 
 # Links úteis
@@ -129,3 +125,9 @@ Config file if you want to debug with VSCode ObjectScript
 - [Tipos de dados](https://docs.intersystems.com/irislatest/csp/docbook/DocBook.UI.Page.cls?KEY=GCOS_types)
 - [Formatos de datas](https://docs.intersystems.com/iris20221/csp/docbook/DocBook.UI.Page.cls?KEY=GOBJ_datatypes#GOBJ_dt_fmtstrans)
 - [Classe %Persistent - propriedades e métodos](https://docs.intersystems.com/iris20221/csp/documatic/%25CSP.Documatic.cls?LIBRARY=%25SYS&CLASSNAME=%25Library.Persistent)
+
+
+## Outros
+
+- [Docker com IRIS](https://community.intersystems.com/post/dockerfile-and-friends-or-how-run-and-collaborate-objectscript-projects-intersystems-iris)
+- [Fórum de dúvidas Intersystem](https://community.intersystems.com/?filter=questions)
