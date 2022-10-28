@@ -65,19 +65,19 @@ Na edição do usuário é possível definir os direitos de acesso, para adicion
 Para mais detalhes [Documentação Intersystem contas de usuário](https://docs.intersystems.com/irislatest/csp/docbook/DocBook.UI.Page.cls?KEY=GAUTHZ_users)
 
 
-### Executando comandos SQL
+
+## Executando comandos SQL
 Pelo portal de admnistração é possível executar comandos SQL através do menu: Sistema > SQL, Selecione a namespace que deseja acessar, este editor aceita comandos SQL padrão e específicos Caché/IRIS
 
 ![irissql.png](/Instructions/images/irissql.png)
 
-Pontos de atenção
-	- O modo de exibição define o tipo de dado retornado quando
-	- Uma tabela criada a partir de uma classe com mais de um pacote por exemplo starter.entity.Pessoa, no nome tabela mantém apenas o último ponto, trocando os primeiros por underline 
-		<outrosPacotes>_starter_entity.Pessoa
-	- Para detalhes sobre as funções disponíveis para os comandos SQL IRI acesse a [Documentação oficial](https://docs.intersystems.com/irislatest/csp/docbook/DocBook.UI.Page.cls?KEY=GSQL_langelements)
+### Pontos de atenção
+- O modo de exibição define o tipo de dado retornado quando
+- Uma tabela criada a partir de uma classe com mais de um pacote por exemplo starter.entity.Pessoa, no nome tabela mantém apenas o último ponto, trocando os primeiros por underline <outrosPacotes_>starter_entity.Pessoa
+- Para detalhes sobre as funções disponíveis para os comandos SQL IRI acesse a [Documentação Intersystem sobre elementos SQL](https://docs.intersystems.com/irislatest/csp/docbook/DocBook.UI.Page.cls?KEY=GSQL_langelements)
 
 
-### Log de erros
+## Log de erros
 Caso seja necessário analisar alguma instabilidade os logs de erros ficam disponíveis no portal de admnistração em:
 
 - Sistema  > Logs do Sistema  > Exibir Log de Erros de Aplicação
@@ -85,7 +85,6 @@ Caso seja necessário analisar alguma instabilidade os logs de erros ficam dispo
 
 
 
-## plugins
 
 
 ## What's inside the repository
