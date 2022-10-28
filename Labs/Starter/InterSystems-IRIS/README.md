@@ -66,11 +66,11 @@ Para mais detalhes [Documentação Intersystem contas de usuário](https://docs.
 
 
 ### Executando comandos SQL
-- Pelo portal de admnistração é possível executar comandos SQL através do menu: Sistema > SQL, Selecione a namespace que deseja acessar, este editor aceita comandos SQL padrão e específicos Caché/IRIS
+Pelo portal de admnistração é possível executar comandos SQL através do menu: Sistema > SQL, Selecione a namespace que deseja acessar, este editor aceita comandos SQL padrão e específicos Caché/IRIS
 
 ![irissql.png](/Instructions/images/irissql.png)
 
-- Pontos de atenção
+Pontos de atenção
 	- O modo de exibição define o tipo de dado retornado quando
 	- Uma tabela criada a partir de uma classe com mais de um pacote por exemplo starter.entity.Pessoa, no nome tabela mantém apenas o último ponto, trocando os primeiros por underline 
 		<outrosPacotes>_starter_entity.Pessoa
