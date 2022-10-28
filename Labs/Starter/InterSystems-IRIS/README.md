@@ -1,4 +1,5 @@
 ## Pre requisitos
+
 - [Setup ambiente de desenvolvimento](/Instructions/SETUP.md)
 
 ## Instalação
@@ -31,9 +32,7 @@ $ docker-compose exec iris iris session iris
 
 - Portal local
 ```
-
-```
- http://localhost:53773/csp/sys/%25CSP.Portal.Home.zen
+	http://localhost:53773/csp/sys/%25CSP.Portal.Home.zen
     - usuario: _SYSTEM
     - senha: SYS
 ```
