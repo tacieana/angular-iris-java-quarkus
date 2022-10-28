@@ -9,7 +9,7 @@ Abrir o terminal neste diretório e rodar o comando:
  docker-compose build
 ```
 
-If a BUILDK error occurs, run the command:
+Se ocorrer erro no build, rode o comando:
  
 ```
  DOCKER_BUILDKIT=1 docker-compose build
@@ -21,19 +21,21 @@ Executar container IRIS com o seu projeto:
  docker-compose up -d
 ```
 
-## Verificar funcionamento
+## Acessando o IRIS
 
-Abrir IRIS terminal:
+- Terminal:
 
 ```
 $ docker-compose exec iris iris session iris
-USER>write ##class(dc.sample.ObjectScript).Test()
 ```
 
-## CSP Portal local
-- http://localhost:53773/csp/sys/%25CSP.Portal.Home.zen
+- Portal local
+
+```
+ http://localhost:53773/csp/sys/%25CSP.Portal.Home.zen
     - user: _SYSTEM
     - pwd: SYS
+```
 
 ## Criar uma nova namespace para o projeto
 - Acesse o portal local:  http://localhost:53773/csp/sys/%25CSP.Portal.Home.zen
