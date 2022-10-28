@@ -85,6 +85,13 @@ Caso seja necessário analisar alguma instabilidade os logs de erros ficam dispo
 
 
 
+## VsCode
+
+### Plugins
+Para acessar o servidor IRIS através do VsCode instale o plugin InterSystems [ObjectScript Extension Pack](https://marketplace.visualstudio.com/items?itemName=daimor.vscode-objectscript)
+
+![vscodeintersystemextensionpack.png](/Instructions/images/vscodeintersystemextensionpack.png)
+
 
 
 ## What's inside the repository

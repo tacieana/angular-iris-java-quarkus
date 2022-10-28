@@ -8,10 +8,5 @@ Realize o download e instalação das ferramentas:
 - [VsCode](https://code.visualstudio.com/)
 
 
-Para acessar o servidor IRIS através do VsCode instale o plugin InterSystems ObjectScript Extension Pack
-- [ObjectScript Extension Pack](https://marketplace.visualstudio.com/items?itemName=daimor.vscode-objectscript)
-
-   ![vscodeintersystemextensionpack.png](images/vscodeintersystemextensionpack.png)
-
 
 TODO: Documentar setup de ambiente de desenvolvimento
