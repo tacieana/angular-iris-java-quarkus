@@ -1,5 +1,5 @@
 ## Pre requisitos
-- [Setup ambiente de desenvolvimento](Instructions/SETUP.md)
+- [Setup ambiente de desenvolvimento](/Instructions/SETUP.md)
 
 ## Instalação
 
