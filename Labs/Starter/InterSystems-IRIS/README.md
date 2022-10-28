@@ -1,13 +1,9 @@
-## intersystems-objectscript-template
-This is a template for InterSystems ObjectScript Github repository.
-The template goes also with a few files which let you immediately compile your ObjectScript files in InterSystems IRIS Community Edition in a docker container
+## Pre requisitos
+- [Setup ambiente de desenvolvimento](Instructions/SETUP.md)
 
-## Prerequisites
-Make sure you have [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and [Docker desktop](https://www.docker.com/products/docker-desktop) installed.
+## Instalação
 
-## Installation
-
-Open the terminal in this directory and run:
+Abrir o terminal neste diretório e rodar o comando:
 
 ```
  docker-compose build
@@ -19,25 +15,33 @@ If a BUILDK error occurs, run the command:
  DOCKER_BUILDKIT=1 docker-compose build
 ```
 
-3. Run the IRIS container with your project:
+Executar container IRIS com o seu projeto:
 
 ```
  docker-compose up -d
 ```
 
-## How to Test it
+## Verificar funcionamento
 
-Open IRIS terminal:
+Abrir IRIS terminal:
 
 ```
 $ docker-compose exec iris iris session iris
 USER>write ##class(dc.sample.ObjectScript).Test()
 ```
 
-## CSP Portal Home
+## CSP Portal local
 - http://localhost:53773/csp/sys/%25CSP.Portal.Home.zen
     - user: _SYSTEM
     - pwd: SYS
+
+## Criar uma nova namespace para o projeto
+- Acesse o portal local:  http://localhost:53773/csp/sys/%25CSP.Portal.Home.zen
+- Acesse Sistema > Configuração > Namespaces > Criar novo namespace
+- Preencha os dados do namespace:
+![namespace.png](docs/namespace.png)
+
+
 
 ## How to start coding
 This repository is ready to code in VSCode with ObjectScript plugin.
