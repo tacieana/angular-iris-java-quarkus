@@ -48,28 +48,21 @@ http://localhost:53773/csp/sys/%25CSP.Portal.Home.zen
 ![namespace.png](/Instructions/images/namespace.png)
 
 
-## Manutenção de usuários
+### Manutenção de usuários
 
-### No portal de administração, acesse Sistema > Administração de Segurança > Usuários para visualizar os usuários existentes e seus direitos de acesso
+No portal de administração, acesse Sistema > Administração de Segurança > Usuários para visualizar os usuários existentes e seus direitos de acesso
 
 ![irisusuarios.png](/Instructions/images/irisusuarios.png)
 
-### Ao criar um novo usuário, para facilitar copie os direitos de acesso de um usuário existente
+Ao criar um novo usuário, para facilitar copie os direitos de acesso de um usuário existente
 
 ![irisnovousuario.png](/Instructions/images/irisnovousuario.png)
 
-### Na edição do usuário é possível definir os direitos de acesso, para adicionar uma nova função ao usuário selecione na lista, e clique no botão aplicar
+Na edição do usuário é possível definir os direitos de acesso, para adicionar uma nova função ao usuário selecione na lista, e clique no botão aplicar
 
 ![irisuserroles.png](/Instructions/images/irisuserroles.png)
 
-Para mais detalhes [Documentação Intersystem contas de usuário] https://docs.intersystems.com/irislatest/csp/docbook/DocBook.UI.Page.cls?KEY=GAUTHZ_users
-
-
-## Log de erros
-Caso seja necessário analisar alguma instabilidade os logs de erros ficam disponíveis no portal de admnistração em:
-
-- Sistema  > Logs do Sistema  > Exibir Log de Erros de Aplicação
-- Sistema  > Servidores de Replicação (Shadow)  > Erros de Fonte de Dados
+Para mais detalhes [Documentação Intersystem contas de usuário] (https://docs.intersystems.com/irislatest/csp/docbook/DocBook.UI.Page.cls?KEY=GAUTHZ_users)
 
 
 ## Executando comandos SQL
@@ -79,8 +72,15 @@ Caso seja necessário analisar alguma instabilidade os logs de erros ficam dispo
 ![irissql.png](/Instructions/images/irissql.png)
 
 
+## Log de erros
+Caso seja necessário analisar alguma instabilidade os logs de erros ficam disponíveis no portal de admnistração em:
 
-##plugins
+- Sistema  > Logs do Sistema  > Exibir Log de Erros de Aplicação
+- Sistema  > Servidores de Replicação (Shadow)  > Erros de Fonte de Dados
+
+
+
+## plugins
 
 
 ## What's inside the repository
