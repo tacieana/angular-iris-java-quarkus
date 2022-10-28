@@ -39,7 +39,7 @@ http://localhost:53773/csp/sys/%25CSP.Portal.Home.zen
     - senha: SYS
 ```
 
-## Manutenção do banco de dados
+## Manutenção servidor IRIS
 ### Criando uma namespace
 - Acesse o portal local:  http://localhost:53773/csp/sys/%25CSP.Portal.Home.zen
 - Acesse Sistema > Configuração > Namespaces > Criar novo namespace
@@ -62,17 +62,22 @@ Na edição do usuário é possível definir os direitos de acesso, para adicion
 
 ![irisuserroles.png](/Instructions/images/irisuserroles.png)
 
-Para mais detalhes [Documentação Intersystem contas de usuário] (https://docs.intersystems.com/irislatest/csp/docbook/DocBook.UI.Page.cls?KEY=GAUTHZ_users)
+Para mais detalhes [Documentação Intersystem contas de usuário](https://docs.intersystems.com/irislatest/csp/docbook/DocBook.UI.Page.cls?KEY=GAUTHZ_users)
 
 
-## Executando comandos SQL
-- Pelo portal de admnistração é possível executar comandos SQL através do menu: Sistema > SQL
-- Selecione a namespace que deseja acessar
+### Executando comandos SQL
+- Pelo portal de admnistração é possível executar comandos SQL através do menu: Sistema > SQL, Selecione a namespace que deseja acessar, este editor aceita comandos SQL padrão e específicos Caché/IRIS
 
 ![irissql.png](/Instructions/images/irissql.png)
 
+- Pontos de atenção
+	- O modo de exibição define o tipo de dado retornado quando
+	- Uma tabela criada a partir de uma classe com mais de um pacote por exemplo starter.entity.Pessoa, no nome tabela mantém apenas o último ponto, trocando os primeiros por underline 
+		<outrosPacotes>_starter_entity.Pessoa
+	- Para detalhes sobre as funções disponíveis para os comandos SQL IRI acesse a [Documentação oficial](https://docs.intersystems.com/irislatest/csp/docbook/DocBook.UI.Page.cls?KEY=GSQL_langelements)
 
-## Log de erros
+
+### Log de erros
 Caso seja necessário analisar alguma instabilidade os logs de erros ficam disponíveis no portal de admnistração em:
 
 - Sistema  > Logs do Sistema  > Exibir Log de Erros de Aplicação
